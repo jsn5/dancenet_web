@@ -1,0 +1,70 @@
+# ONNX Models (large binary files)
+*.onnx
+model.onnx
+
+# Generated dance sequences
+generated/
+*.gif
+*.mp4
+*.mp3
+*.wav
+
+# Seed sequences and temporary data
+temp_frames/
+seed_sequence.json
+
+# Data files (may be large)
+data/
+*.npz
+
+# Keep source code JSON files
+# But ignore large data JSON files
+*_poses.json
+
+# IDE & Editor folders
+.idea/
+.vscode/
+*.code-workspace
+.vs/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node.js files (if you add npm later)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Python related (for preprocessing)
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+env/
+.env/
+.venv/
+ENV/
+
+# Training artifacts
+training/trained_models/
+*.pth
+checkpoint/
+
+# Backup files
+*.bak
+*.swp
+*~
