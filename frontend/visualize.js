@@ -140,12 +140,12 @@ class PoseVisualizer {
         
         // Draw head (circle)
         headCtx.beginPath();
-        headCtx.arc(30, 30, 25, 0, 2 * Math.PI);
+        headCtx.arc(30, 25, 25, 0, 2 * Math.PI);
         headCtx.fillStyle = this.settings.sprite.headColor;
         headCtx.fill();
         
         // Draw torso (rounded rectangle)
-        roundedRect(torsoCtx, 10, 5, 80, 120, 20);
+        roundedRect(torsoCtx, 30, 5, 40, 120, 20);
         torsoCtx.fillStyle = this.settings.sprite.color;
         torsoCtx.fill();
         
@@ -155,7 +155,7 @@ class PoseVisualizer {
         armCtx.fill();
         
         // Draw leg (rounded rectangle)
-        roundedRect(legCtx, 5, 5, 30, 110, 10);
+        roundedRect(legCtx, 5, 40, 30, 40, 10);
         legCtx.fillStyle = this.settings.sprite.color;
         legCtx.fill();
         
